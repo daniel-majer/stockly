@@ -1,12 +1,15 @@
+"use client";
+
 import React from "react";
 import Navbar from "./_navigation/navbar/navbar";
 import Sidebar from "./_navigation/sidebar/sidebar";
+import StoreProvider from "./redux";
 
 type DashboardWrapperProps = {
   children: React.ReactNode;
 };
 
-const DashboardWrapper = ({ children }: DashboardWrapperProps) => {
+const DashboardLayout = ({ children }: DashboardWrapperProps) => {
   return (
     <main className="flex min-h-screen">
       <Sidebar />
@@ -17,6 +20,13 @@ const DashboardWrapper = ({ children }: DashboardWrapperProps) => {
         </div>
       </div>
     </main>
+  );
+};
+const DashboardWrapper = ({ children }: DashboardWrapperProps) => {
+  return (
+    <StoreProvider>
+      <DashboardLayout>{children}</DashboardLayout>
+    </StoreProvider>
   );
 };
 

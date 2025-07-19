@@ -1,41 +1,41 @@
 import {
-  ChartPieIcon,
-  LayoutDashboard,
-  Package,
-  Settings,
-  User,
-  Warehouse,
+  LucideChartPie,
+  LucideLayoutDashboard,
+  LucidePackage,
+  LucideSettings,
+  LucideUser,
+  LucideWarehouse,
 } from "lucide-react";
 
 export const routes = [
   {
     label: "Dashboard",
     href: "/",
-    icon: <LayoutDashboard size={20} />,
+    icon: <LucideLayoutDashboard size={20} />,
   },
   {
     label: "Products",
     href: "/products",
-    icon: <Package size={20} />,
+    icon: <LucidePackage size={20} />,
   },
   {
     label: "Inventory",
     href: "/inventory",
-    icon: <Warehouse size={20} />,
+    icon: <LucideWarehouse size={20} />,
   },
   {
     label: "Users",
     href: "/users",
-    icon: <User size={20} />,
+    icon: <LucideUser size={20} />,
   },
   {
     label: "Settings",
     href: "/settings",
-    icon: <Settings size={20} />,
+    icon: <LucideSettings size={20} />,
   },
   {
     label: "Expenses",
     href: "/expenses",
-    icon: <ChartPieIcon size={20} />,
+    icon: <LucideChartPie size={20} />,
   },
 ];

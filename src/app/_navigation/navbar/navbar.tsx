@@ -1,7 +1,12 @@
 import React from "react";
+import ExpandButton from "../components/expand-button";
 
 const Navbar = () => {
-  return <nav className="bg-gray-200 p-4">Navbar</nav>;
+  return (
+    <nav className="bg-sidebar flex p-5">
+      <ExpandButton />
+    </nav>
+  );
 };
 
 export default Navbar;
