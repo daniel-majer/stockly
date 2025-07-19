@@ -35,10 +35,10 @@ const eslintConfig = [
       ],
       "simple-import-sort/exports": "error",
     },
-    parserOtions: {
-      sourceType: "module",
-      ecmaVersion: "latest",
-    },
+    // parserOtions: {
+    //   sourceType: "module",
+    //   ecmaVersion: "latest",
+    // },
   },
 ];
 
