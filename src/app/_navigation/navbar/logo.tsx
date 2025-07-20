@@ -18,7 +18,7 @@ const Logo = () => {
             "w-0 overflow-hidden opacity-0": isSidebarCollapsed,
             "w-auto opacity-100": !isSidebarCollapsed,
           })}
-          style={{ minWidth: isSidebarCollapsed ? 0 : "100px" }}
+          style={{ minWidth: isSidebarCollapsed ? 0 : "100px " }}
         >
           Stockly
         </h1>
